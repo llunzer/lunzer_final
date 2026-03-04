@@ -1,0 +1,241 @@
+:root {
+  --sky: #e8f8ff;
+  --dk-cyan: #00343d;
+  --white: #ffffff;
+  --dk-gray: #222222;
+  --fonts: 'Rye', 'Roboto', 'sans-serif';
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--sky);
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  background: url("images/swiss-valley.jpg") center/cover;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.main-title {
+  font-size: 4rem;            
+  font-weight: 700;     
+  font-family: var(--fonts);        
+  color: var(--dk-cyan);       
+  text-align: center;
+  margin-bottom: 2rem;          
+}
+
+.nav a {
+  display: inline-block;                   
+  padding: 1rem 1.6rem;          
+  margin: 0 45px;                        
+  background-color: var(--dk-cyan);   
+  color: white;                          
+  font-weight: bold;
+  text-decoration: none;             
+  border-radius: 8px;                       
+}
+
+.nav a:hover {
+  background-color: rgba(224, 238, 255, 0.8);
+  color: var(--dk-cyan)                                
+}
+
+/* middle sction*/
+
+.intro {
+  background-color: var(--sky);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.section-title {
+font-size: 2.5rem;     
+  font-weight: 700;              
+  color: var(--dk-cyan);            
+  margin-bottom: 30px;
+  font-family: var(--fonts);  
+  text-align: center;                      
+}
+
+.intro p {
+ width: 50%;                 
+  max-width: 700px;           
+  margin: 0 auto 10px auto;    
+  font-size: 1.1rem; 
+  font-family: 'Roboto', sans-serif;        
+  line-height: 1.5;            
+  text-align: center;            
+}
+
+
+/* column stuff */
+
+.two-column {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;              
+  padding: 70px 20px;
+  background-color: var(--sky);
+  flex-wrap: wrap;  
+}
+
+.column {      
+  max-width: 500px;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column img {
+  width: 100%;            
+  height: 300px;       
+  margin-bottom: 15px;
+}
+
+.column-title {
+  display: inline-block;
+  padding: 1px 30px;
+  font-family: var(--fonts);  
+  text-align: center; 
+  margin-bottom: 10px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.column p {
+  font-size: 1.1rem;         
+  line-height: 1.6;             
+  text-align: center;           
+  margin-bottom: 20px;            
+  width: 90%;                       
+  margin-left: auto;               
+  margin-right: auto;    
+}
+
+/* footer */
+
+.footer {
+  background: var(--dk-cyan);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer p {
+  width: 300px;
+  color: white;
+  margin: 10px auto;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 6px;
+}
+
+.container {
+  max-width: 1280px;   
+}
+
+
+/* CONTACT PAGE STUFF BELOW */
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1280px;
+  margin: 80px auto 40px auto;
+  padding: 0 20px;
+}
+
+.contact-column {
+  flex: 1;              
+  min-width: 400px;            
+}
+
+/* left column */
+
+.left-column h2 {
+  font-family: 'Rye', 'sans-serif';
+  font-size: 2.5rem;
+  color: var(--dk-cyan);
+  margin-bottom: 15px;
+}
+
+.left-column p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.left-column img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+/* right column */
+
+.right-column {
+  margin-top: 100px; 
+}
+
+.right-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* makes the boxes bigger */
+
+.right-column form input, .right-column form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: auto;
+}
+
+/* phone or email choices section */
+
+.right-column form fieldset {
+  display: flex; 
+  justify-content: center;         
+  align-items: center;      
+  gap: 40px;     
+  margin-top: 20px;           
+  border: 1px solid var(--dk-cyan);  
+  border-radius: 10px;
+}
+
+.right-column form fieldset legend {
+  margin-right: 5px; 
+  font-weight: bold;
+  font-size: 1rem;     
+  color: #00343d;  
+}
+
+/* submit button */
+
+.right-column form input[type="submit"] {
+  margin-top: 20px;
+  margin-right: 5px; 
+  font-weight: bold;
+  background-color: #00343d;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
